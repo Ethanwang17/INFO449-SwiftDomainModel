@@ -10,7 +10,7 @@ class PersonTests: XCTestCase {
 
     func testAgeRestrictions() {
         let matt = Person(firstName: "Matthew", lastName: "Neward", age: 15)
-
+        
         matt.job = Job(title: "Burger-Flipper", type: Job.JobType.Hourly(5.5))
         XCTAssert(matt.job == nil)
 
